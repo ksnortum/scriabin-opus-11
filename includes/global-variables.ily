@@ -27,38 +27,6 @@
         \hspace #0.5 \raise #0.4 \tiny \note { #dura } #UP
         \small { "=" #mm }
       }#})))
-%{
-makeSpanner =
-#(define-music-function (mrkup) (markup?)
-  #{
-    \override TextSpanner.Y-offset = -0.25
-    \override TextSpanner.bound-details.left.text = #mrkup
-    \override TextSpanner.bound-details.left.stencil-align-dir-y = 0.25
-    \override TextSpanner.bound-details.left-broken.text = ##f
-  #})
-
-spacingSectionOn = 
-#(define-music-function (dur) (real?)
-   #{
-     \newSpacingSection
-     \override Score.SpacingSpanner.spacing-increment = #dur
-   #})
-
-spacingSectionOff = {
-  \newSpacingSection
-  \revert Score.SpacingSpanner.spacing-increment
-}
-
-forceStemLength =
-#(define-music-function (len) (number?)
-   (once
-    (propertyOverride
-     '(Stem after-line-breaking)
-     (lambda (grob)
-       (let ((beam (ly:grob-object grob 'beam)))
-         (ly:grob-property beam 'quantized-positions)
-         (ly:grob-set-property! grob 'length len))))))
-%}
 
 %
 % Redefine
@@ -76,21 +44,6 @@ lhMark = \markup {
 rhMark = \markup { 
   \path #0.1 #'((moveto -1 0)(rlineto 0 -1.5)(rlineto 0.5 0))
 }
-
-%{
-ohn = \once \hideNotes 
-ooa = \once \omit Accidental
-
-tweakInsideSlur = 
-  \tweak avoid-slur #'inside 
-  \tweak outside-staff-priority ##f
-  \etc
-
-fingeringInsideStaffOn = \override Fingering.staff-padding = #'()
-fingeringInsideStaffOff = \revert Fingering.staff-padding
-
-slashFlag = \once \override Flag.stroke-style = "grace"
-%}
 
 insideSlur = \tweak avoid-slur #'inside \etc
 

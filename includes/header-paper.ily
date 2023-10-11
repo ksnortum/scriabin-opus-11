@@ -56,7 +56,7 @@
 \layout {
   \context {
     \Score
-    % \omit BarNumber % <-- uncomment me
+    \omit BarNumber
     \override Slur.details.free-head-distance = 0.75 % 0.5
   }
   \context {
