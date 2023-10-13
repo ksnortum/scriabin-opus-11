@@ -227,7 +227,7 @@ preludeOneNotes =
 \score {
   \header {
     title = "1."
-    composer = "Alexander Sciabin"
+    composer = "Alexander Scriabin"
     opus = "Opus 11, No. 1"
   }
   \keepWithTag layout  
