@@ -80,7 +80,7 @@ rightHandUpper = \relative {
     gf16 f d' bf])  ef,[( af gf ef' cf])  \beamPositionsK e,[( |
     bf'16 af e' c])  f,[( bf af f' df])  f,[( |
     ef' af, f' d])  \clef treble af[( g' d bf' f])  d[( |
-    c'16 af d bf]  af[ bf' f d' af]) r |
+    c'16 af d bf]  af[ g' d bf' f]) r |
   }
   
   \barNumberCheck 25
@@ -133,7 +133,7 @@ rightHandLower = \relative {
   
   \barNumberCheck 17
   s2 * 2 |
-  s4 df, |
+  s4 d, |
   ef s |
   s2 * 4 |
   
