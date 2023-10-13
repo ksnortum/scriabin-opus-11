@@ -24,7 +24,13 @@ rightHandUpper = \relative {
   \voiceOne
   d''8(^\rubato c ef bf d c |
   <d, bf'>4 a'2 |
-  bf8[ a] bf[ f] a[ gf] |
+  % For the last note of the measure, SrcA has G-natural, but SrcB has G-flat
+  % (no accidental). Considering the five other measures in this piece with
+  % similar figurations, the melodic interval from the previous note to this
+  % note is either a (descending) major or minor second. Therefore, follow SrcA
+  % with the G-natural, since otherwise the interval would be a descending
+  % augmented second.
+  bf8[ a] bf[ f] a[ g] |
   g2 fs4 |
   g2. |
   g4 af g |
@@ -43,6 +49,15 @@ rightHandUpper = \relative {
   
   \barNumberCheck 17
   r4 <g g'>(^\accel <af af'>) |
+  % For the octave chord on beat 2, SrcA has A-naturals (with cautionary
+  % accidentals), but SrcB has A-flats. Consulting another edition (Muzyka,
+  % 1967), it has A-naturals and contains a footnote mentioning that "all"
+  % editions have the A-flats, but that a correction was made "on the basis of
+  % the MS". This comment could be interpreted in different ways, and it's
+  % partially inaccurate, because the A-naturals are present in at least one
+  % earlier edition (SrcA, published 1897). Without consulting the autograph
+  % manuscript for further clarification, I would consider the composer's
+  % intention uncertain, making it a judgment call for editors.
   r4 <af af'>( <bf bf'>) |
   r4 <bf bf'>( <a a'>8) <g' a cs>\noBeam |
   q2.\fermata |
