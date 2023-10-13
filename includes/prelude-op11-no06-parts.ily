@@ -85,7 +85,7 @@ rightHandUpper = \relative {
   q8 q <es es'>4~ |
   q8 q^\rit <e e'>4~ |
   q8 q <ds ds'>4-\tieShapeG ~ |
-  q8 q^\rit <f f'>4 |
+  q8 q^\rit <d d'>4 |
   
   \barNumberCheck 49
   <cs g' b cs>2~ |
