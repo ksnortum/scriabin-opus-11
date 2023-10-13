@@ -174,7 +174,14 @@ dynamics = {
 }
 
 tempi = {
-  \textMark \markup \tempo-markup Andantino #2 #0 66
+  % SrcA and SrcB agree on the tempo of "Andante" but disagree about the
+  % metronome mark: SrcA has "4 = 96-100", and SrcB has "8 = 96-100". Follow
+  % SrcB in this case for two reasons: (a) a metronome mark for a quarter note
+  % beat (instead of an eighth, or dotted quarter, or dotted half) makes less
+  % sense for a compound meter like 6/8; (b) an eighth-note beat, with 96-100
+  % bpm, is closest in feel to "Andante" than either a dotted-quarter or
+  % dotted-half beat.
+  \textMark \markup \tempo-markup Andante #3 #0 96-100
   \set Score.tempoHideNote = ##t
   \tempo 4 = 54
   s2. * 7 |
