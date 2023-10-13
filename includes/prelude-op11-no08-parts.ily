@@ -233,7 +233,7 @@ leftHand = \relative {
   d,8-\slurShapeB ( g d' b' g' d,) |
   d,8-\slurShapeB ( gs fs' bs fs' fs,) |
   cs,8-\slurShapeB ( fs d' b' fs' d,) |
-  cs,8-\slurShapeB ( fs d' b' fs' d,) |
+  cs,8-\slurShapeB ( fs cs' a' fs' cs,) |
   
   \barNumberCheck 41
   cs,8( b' d b' d d,) |
