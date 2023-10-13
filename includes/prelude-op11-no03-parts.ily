@@ -211,7 +211,7 @@ leftHand = \relative {
   R2. * 2 |
   <d a'>4 r r|
   <g, d' b'>2.~ |
-  q |
+  q\fermata |
 }
 
 dynamics = {
