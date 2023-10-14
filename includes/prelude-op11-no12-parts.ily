@@ -196,7 +196,7 @@ preludeTwelveNotes =
 \score {
   \header {
     title = "12."
-    composer = "Alexander Sciabin"
+    composer = "Alexander Scriabin"
     opus = "Opus 11, No. 12"
   }
   \keepWithTag layout  

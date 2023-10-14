@@ -12,7 +12,13 @@ global = {
 
 rightHand = \relative {
   \global
-  \textMark \markup \tempo-markup Presto #2 #0 100
+  % SrcA has metronome mark "4 = 100", but SrcB has metronome mark "4. = 100".
+  % Due to the specific mixed meter of this piece, neither a quarter-note beat
+  % nor dotted-quarter-note beat suffice to define a specific tempo. Clearly
+  % "4. = 100" is closer to a "Presto" tempo than "4 = 100", but the marking is
+  % still ambiguous. If "4. = 100" is reasonable, then perhaps specify "8 =
+  % 300" as the metronome mark instead.
+  \textMark \markup \tempo-markup Presto #2 #1 100
   \set Score.tempoHideNote = ##t
   \tempo 4 = 120
   \partial 4 r4
@@ -118,7 +124,7 @@ leftHand = \relative {
   q8 <d d'> <f f'>  q <c c'> <e e'> |
   q8 <a, a'> <e' e'>  <a a'> <e' e'> <f f'> |
   <a, a'> <f' f'> <a, a'> <d, d'> <d, d'> <d'' a' d>\noBeam |
-  q2. |
+  q2.\fermata |
 }
 
 dynamics = {
@@ -306,7 +312,7 @@ preludeTwentyFourNotes =
 \score {
   \header {
     title = "24."
-    composer = "Alexander Sciabin"
+    composer = "Alexander Scriabin"
     opus = "Opus 11, No. 24"
   }
   \keepWithTag layout  

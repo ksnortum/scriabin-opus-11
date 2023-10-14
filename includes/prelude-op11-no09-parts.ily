@@ -173,8 +173,8 @@ leftHandLower = \relative {
   \voiceThree gs8 a_~ \voiceFour a4. a8~ |
   a2. |
   \voiceThree gs8 a_~ \voiceFour a2 |
-  d2. |
-  \voiceThree ds,8 e_~ \voiceFour e4. e8~ |
+  ds,2. |
+  \voiceThree ds8 e_~ \voiceFour e4. e8~ |
   e2. |
   \voiceThree ds8 e_~ \voiceFour e4. e8 ~
   e2. |
@@ -331,7 +331,7 @@ preludeNineNotes =
 \score {
   \header {
     title = "9."
-    composer = "Alexander Sciabin"
+    composer = "Alexander Scriabin"
     opus = "Opus 11, No. 9"
   }
   \keepWithTag layout  

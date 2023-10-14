@@ -58,7 +58,7 @@ rightHand = \relative {
     e8 b g]  d'[ b g' d g,])  a'8[( e |
     
     \barNumberCheck 9
-    g8 d g,]  a'[ b e d c]  a[ e |
+    g8 d g,]  a'[ b e d b]  a[ e |
     g8 d g,]  e'[ g, c g c,])  f'[( b, |
     e8 b e,]  b''[ c e d c]  b[ e, |
     a8 e b]  b'[ e, a e a,])  g'[( b, |
@@ -227,7 +227,7 @@ preludeOneNotes =
 \score {
   \header {
     title = "1."
-    composer = "Alexander Sciabin"
+    composer = "Alexander Scriabin"
     opus = "Opus 11, No. 1"
   }
   \keepWithTag layout  

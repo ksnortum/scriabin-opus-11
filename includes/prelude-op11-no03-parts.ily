@@ -211,7 +211,7 @@ leftHand = \relative {
   R2. * 2 |
   <d a'>4 r r|
   <g, d' b'>2.~ |
-  q |
+  q\fermata |
 }
 
 dynamics = {
@@ -321,7 +321,7 @@ preludeThreeNotes =
 \score {
   \header {
     title = "3."
-    composer = "Alexander Sciabin"
+    composer = "Alexander Scriabin"
     opus = "Opus 11, No. 3"
   }
   \keepWithTag layout  

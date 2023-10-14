@@ -638,7 +638,7 @@ preludeTwoNotes =
 \score {
   \header {
     title = "2."
-    composer = "Alexander Sciabin"
+    composer = "Alexander Scriabin"
     opus = "Opus 11, No. 2"
   }
   \keepWithTag layout  
