@@ -18,7 +18,7 @@ rightHand = \relative {
   % "4. = 100" is closer to a "Presto" tempo than "4 = 100", but the marking is
   % still ambiguous. If "4. = 100" is reasonable, then perhaps specify "8 =
   % 300" as the metronome mark instead.
-  \textMark \markup \tempo-markup Presto #2 #0 100
+  \textMark \markup \tempo-markup Presto #2 #1 100
   \set Score.tempoHideNote = ##t
   \tempo 4 = 120
   \partial 4 r4
