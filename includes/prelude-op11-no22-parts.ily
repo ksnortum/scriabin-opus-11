@@ -40,7 +40,11 @@ rightHandUpper = \relative {
   \barNumberCheck 9
   a8 g bf f a g |
   <a, f'>4 e'2 |
-  f8[ e] f[ c] e[ df] |
+  % For the last note of the measure, SrcA has D-natural, but SrcB has D-flat
+  % (no accidental). I think that the composer intended measures 9-12 to be an
+  % exact transposition of measures 1-4, down a perfect fourth, so follow SrcA
+  % with the D-natural.
+  f8[ e] f[ c] e[ d] |
   d2 cs4 |
   \after 4. ^\accel d2.~ |
   d4 ef d) |
