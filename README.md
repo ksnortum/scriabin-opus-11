@@ -21,7 +21,7 @@ find the `\paper` block (in the middle) and set `two-sided = ##f`.
 ## Thanks
 Thanks to the folks at the [LilyPond user's mailing list](mailto://lilypond-user@gnu.org), especially Jean Abou Samra, for all the help getting LilyPond to do what I wanted.
 
-Thanks to @phmccarty for the proofreading.  It really is a big help.
+Thanks to [Patrick McCarty](https://github.com/phmccarty) for the proofreading.  It really is a big help.
 
 ## License
 This work is licensed under the [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) from Creative Commons.  Follow the link for details.  Basically, you can use this work however you want *if* you keep the same license and you attribute the work to me, Knute Snortum (knute [at] snortum [dot] net).
